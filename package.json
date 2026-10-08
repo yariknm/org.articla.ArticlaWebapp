@@ -1,0 +1,36 @@
+{
+  "name": "articla-webapp",
+  "version": "1.0.0",
+  "description": "Desktop client for the Articla social forum (https://articla.org)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --linux --dir"
+  },
+  "keywords": [
+    "articla",
+    "electron",
+    "flatpak",
+    "webapp"
+  ],
+  "author": "Articla",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "electron-store": "^8.2.0"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3",
+    "electron-builder-squirrel-windows": "^24.13.3"
+  },
+  "build": {
+    "productName": "articla-webapp",
+    "directories": {
+      "output": "dist"
+    },
+    "linux": {
+      "target": "dir",
+      "icon": "images/articla.png"
+    }
+  }
+}
